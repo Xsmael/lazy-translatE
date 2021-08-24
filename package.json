@@ -1,6 +1,6 @@
 {
   "name": "lazytranslate",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "If you are lazy enough to translate manually you can try this module. To scan your files and detect strings that must be translated using a pattern (REGEX which you can customise). ouput file is in JSON format",
   "main": "bin/index.js",
   "dependencies": {

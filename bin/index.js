@@ -24,8 +24,6 @@ const options = yargs
  .option("i", { alias: "include", describe: "comma separated list of file extensions to target. If omitted, lazyTranslate will become less lazy and parse every single file under the specified scan-directory; and that recursively.", type: "array", demandOption: false })
  .argv;
 
-console.log(options);
-
 var languageServers= [
     "https://libretranslate.de",
     "https://translate.mentality.rip",
@@ -34,7 +32,6 @@ var languageServers= [
 ];
 
 var activeLangServers= languageServers;
-
 
 
 const TRANSLATE_STRING_PATTERN = /__\(['"](.*?)['"]\)/g;    // Apply any REGEX here as you see fit to match different lang system
@@ -69,7 +66,7 @@ nodeDir.files(directory, function(err, filePaths) {
     // exclude some filenames
     fileCount=filePaths.length;
     log.info(filePaths);
-    log.info(fileCount+" files found!\n\n Go get yoself a cup of tea or coffe, by the time you're back i'll be done! or not 😂 in that case you might as well go for lunch.\n\n Anyways gotta work now!");
+    log.info(fileCount+" files found!\n\n Go get yoself a cup of tea or coffe, by the time you're back i'll be done! or not ¯\_(ツ)_/¯ in that case you might as well go for lunch.\n\n Anyways gotta work now!");
     
     filePaths.forEach(path => {
         var txt= fs.readFileSync(path,{"encoding":"utf-8"});
