@@ -1,13 +1,13 @@
-
 # lazyTranslate
 
 If you are lazy enough to manually translate your app or project you can try this module. It scans your files and detects strings that must be translated using a pattern (REGEX which you can customise). ouput file is in JSON format (for now).
 
-This module has been tested with laravel project blade template files, it could be improved to support other kinds of project the logic is pretty straightforward and should be replicable :). 
-
+This module has been tested with laravel project blade template files, it could be improved to support other kinds of project the logic is pretty straightforward and should be replicable :).
 
 ### Installing
+
 run this from your terminal (Needless to say you must have nodejs installed):
+
 ```
 npm install -g lazytranslate
 ```
@@ -40,21 +40,20 @@ Options:
 
 ```
 
-#### Examples 
+#### Examples
 
-## Basic
+##### Basic
 
 ```
 lazytranslate -d C:\path\to\my\superProject -o C:\path\to\my\superProject\lang\fr.json -i .blade.php -a -s
 ```
 
-## With auto translation and specifying file extensions to parse.
+##### With auto translation and specifying file extensions to parse.
 
 ```
 lazytranslate -d C:\path\to\my\superProject -o C:\path\to\my\superProject\lang\fr.json -i .blade.php -a -s en -t fr
 ```
 
-
 #### Contribute
 
-This was made for a specific need; but can be used to for other purposes with little tweeking. feel free to fork, or contribute and features on github.
+This was made for a specific need; but can be used to for other purposes with little tweeking. feel free to fork, or contribute and features on [github](https://github.com/Xsmael/lazyTranslate).

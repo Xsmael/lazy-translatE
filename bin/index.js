@@ -138,9 +138,12 @@ function writeLangFile() {
            log.notice("Successfully generated language file at "+outputFile);
            log.notice(strCount+" strings found in "+fileCount+" files");
            log.notice(dupesCount+" duplicates "+ (strCount-dupesCount)+" unique strings");
-           log.notice("Auto translated "+trCount+" strings failed to translate "+failedTrCount+"strings");
-           log.info("Launch the script again to retry translating untranslated strings");
-           process.exitCode =0;
+           log.notice("Auto translated "+trCount+" strings");
+           if(failedTrCount){
+               log.warning("Failed to translate "+failedTrCount+" strings");
+               log.info("Launch the script again to retry translating untranslated strings");
+           }
+           process.exit(0);
         } 
     })
 }
