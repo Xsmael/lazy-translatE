@@ -1,0 +1,32 @@
+{
+  "name": "lazytranslate",
+  "version": "0.0.7",
+  "description": "If you are lazy enough to translate manually you can try this module. To scan your files and detect strings that must be translated using a pattern (REGEX which you can customise). ouput file is in JSON format",
+  "main": "bin/index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "node-dir": "^0.1.17",
+    "noogger": "^0.1.8",
+    "yargs": "^17.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xsmael"
+  },
+  "keywords": [
+    "lazy",
+    "transalte",
+    "blade",
+    "laravel",
+    "template"
+  ],
+  "bin": {
+    "lazytranslate": "./bin/index.js"
+  },
+  "author": "Xsmael",
+  "license": "MIT"
+}
